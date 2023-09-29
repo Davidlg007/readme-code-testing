@@ -95,18 +95,32 @@ echo "hello"
 Notice that this action uses markdown parser/formatter, so, if you don't update any code, readme may be updated if formatter works.
 
 
-This is an embedded sequence diagram imported from an external file.
-```mermaid:mermaidSeqTest.mmd
-
+This is an mermaid embedded sequence diagram 
+```mermaid
+sequenceDiagram
+    Alice->>Peter: Hello John, how are you?
+    Peter-->>Alice: I'm Peter!
+    Alice-)Peter: Hello Pete
 ```
 
 
-This is an embedded C4 diagram imported from an external file.
+This is an mermaid embedded C4 diagram imported from an external file.
 ```mermaid:mermaidC4Test.mmd
 
 ``` 
 
 This is an embedded Class diagram imported from an external file.
-```mermaid:mermaidClassTest.mmd
+```plantuml
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
+@enduml
 
 ``` 
