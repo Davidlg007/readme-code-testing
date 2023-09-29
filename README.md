@@ -103,13 +103,7 @@ sequenceDiagram
     Alice-)Peter: Hello Pete
 ```
 
-
-This is an mermaid embedded C4 diagram imported from an external file.
-```mermaid:mermaidC4Test.mmd
-
-``` 
-
-This is an embedded Class diagram imported from an external file.
+This is a plantuml embedded sequence diagram 
 ```plantuml
 @startuml
 'https://plantuml.com/sequence-diagram
@@ -122,5 +116,11 @@ Bob --> Alice: Authentication Response
 Alice -> Bob: Another authentication Request
 Alice <-- Bob: another authentication Response
 @enduml
+
+``` 
+
+
+This is an mermaid embedded diagram imported from an external file.
+```mermaid:mermaidSeqTest.mmd
 
 ``` 
